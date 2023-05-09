@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(23, 68, 23);
+  color: white;
+}
+i {
+  display: inline-block;
+}
+img {
+  width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+ul li {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.btn {
+  background: transparent;
+  border: transparent;
+}
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+}
+.head {
+  min-height: 100vh;
+
+  background: linear-gradient(
+      90deg,
+      rgba(5, 34, 8, 0.787746170678337) 16%,
+      rgba(7, 18, 10, 0.4989059080962801) 48%,
+      rgba(15, 43, 14, 0.7067833698030634) 81%
+    ),
+    url(./images/pexels-tomáš-malík-2581922.jpg) center/cover fixed no-repeat;
+}
+.navgrid h2 {
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 769px) {
+  .links2 {
+    display: block;
+  }
+}
+.side-bar {
+  position: absolute;
+  position: fixed;
+  background: rgb(25, 177, 25);
+  width: 25vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-content: center;
+  transition: all 1s linear;
+}
+.close {
+  transform: translateY(-100%);
+}
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.side li {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  transition: all 1s linear;
+}
+.side :hover {
+  transform: translateX(1rem);
+}
+.closebtn:hover {
+  color: black;
+}
+
+.links2 {
+  display: none;
+}
+.nav-header,
+.banner-header {
+  width: 90vw;
+  margin: 0 auto;
+}
+.navgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-content: center;
+  height: 2rem;
+  margin-top: 3rem;
+
+}
+.icon {
+  justify-self: end;
+}
+.nav-icon {
+  font-size: 1rem;
+  color: white;
+}
+.login {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.banner {
+  text-align: center;
+}
+
+.banner h3 {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 2rem;
+  /* width: 22rem; */
+  margin: 0 auto;
+
+  align-self: center;
+}
+
+.banner p {
+  text-transform: capitalize;
+  font-size: 1em;
+  line-height: 30px;
+  /* width: 36rem; */
+  margin: 0 auto;
+}
+.banner-header {
+  display: grid;
+  place-items: center;
+}
+
+.banner-btn {
+  text-transform: capitalize;
+  background: green;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: transparent;
+}
+.nav-header {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  place-content: center;
+  height: 100vh;
+}
+.product {
+  margin-top: 2rem;
+}
+.product h1 {
+  text-align: center;
+}
+.product-cards {
+  text-align: center;
+  margin-top: 0.5em;
+}
+.card {
+  background: green;
+  margin-bottom: 1rem;
+  padding: 2em;
+  border-radius: 2rem;
+}
+.card h2 {
+  text-transform: capitalize;
+}
+.card p {
+  text-transform: capitalize;
+  line-height: 2rem;
+}
+
+.card-icon {
+  font-size: 2rem;
+  display: inline-block;
+  transition: all 0.3s linear;
+}
+
+.card:hover .card-icon {
+  transform: scale(1.5);
+}
+.card:hover {
+  transform: scale(1);
+}
+
+@media screen and (min-width: 768px) {
+  .product-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1em;
+  }
+}
+.feature {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+.feaimg {
+  border-radius: 1rem;
+  width: 20rem;
+}
+.img-countainer {
+  justify-self: center;
+  object-fit: cover;
+}
+.feature-info {
+  margin: 1rem;
+  place-self: center;
+}
+.feature-info h1 {
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+.featp {
+  width: 20em;
+}
+.featured {
+  width: 20rem;
+  text-transform: capitalize;
+}
+.featured :hover {
+  transform: translateX(2rem);
+}
+.featured p {
+  background: green;
+  margin: 1rem 0;
+  padding: 8px;
+  border-radius: 12px;
+  transition: all 1s linear;
+}
+.feaico {
+  font-size: 1.5rem;
+  color: rgb(24, 65, 24);
+  margin-right: 3px;
+}
+.morein {
+  background: green;
+  width: 10rem;
+  border: none;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+@media screen and (min-width: 758px) {
+  .feature {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+  .img-countainer {
+    place-self: center;
+  }
+}
+
+.property {
+  margin-top: 1rem;
+  height: 100%;
+}
+.property h1 {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+.property img {
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+.pc {
+  max-width: 400px;
+  margin-bottom: 1rem;
+  background: rgb(8, 27, 8);
+  padding: 13px;
+  border-radius: 12px;
+  text-transform: capitalize;
+}
+.property-cards {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 0.5rem;
+  place-content: center;
+}
+.pcd {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+
+}
+.pcd i {
+  color: green;
+  margin-right: 6px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.pd-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.pd-footer button {
+  width: 5rem;
+  padding: 2px;
+  background: none;
+  border: none;
+  border: 1px solid black;
+  border-radius: 12px;
+  color: white;
+  justify-self: end;
+}
+
+.property img {
+  height: 20rem;
+}
+.pd-footer button:hover {
+  background: green;
+}
+@media screen and (min-width: 856px) {
+  .property-cards {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    column-gap: 1rem;
+    height: 58rem;
+  }
+  
+}
+@media screen and (min-width: 922px) {
+  .property-cards {
+   
+    grid-template-columns: 1fr  1fr 1fr;
+    height: 30rem;
+ 
+  }
+.pcd p{
+  font-size: 10px;
+}
+}
+.getstared {
+  background: rgb(8, 27, 8);
+  border-radius: 20px;
+  height: 10rem;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  margin-bottom: 2rem;
+}
+.get {
+  max-width: 80%;
+}
+.getstared h3 {
+  text-transform: uppercase;
+}
+.get p {
+  max-width: 25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.getbtn {
+  text-transform: capitalize;
+  width: 7rem;
+  background: green;
+  color: white;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.footer {
+  background-color: rgb(2, 16, 2);
+}
+.footer-sub {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1rem;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+.footer-sub h3{
+  text-transform:  capitalize;
+}
+.footer-sub li{
+  text-transform: lowercase;
+}
+
+.serv{
+  justify-self: end;
+}
+.contact{
+  justify-self: end;
+}
+.copy {
+  text-align: center;
+}
+.underline{
+  height: 2px;
+  width: 100%;
+  background: white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+}
